@@ -41,8 +41,6 @@ const options = {
             '2022-06-21T00:00:00.00Z',
             '2022-06-22T00:00:00.00Z',
             '2022-06-23T00:00:00.00Z',
-            '2022-06-24T00:00:00.00Z',
-            '2022-06-25T00:00:00.00Z',
         ],
     },
     fill: {
@@ -57,7 +55,7 @@ const options = {
 };
 
 const series = [
-    { name: 'series1', data: [31, 120, 10, 28, 61, 18, 59] }
+    { name: 'series1', data: [31, 120, 10, 28, 61] }
 ];
 
 export default function Dashboard() {
@@ -68,15 +66,15 @@ export default function Dashboard() {
             <Flex
                 w="100%"
                 my="6"
-                maxWidth={1180}
+                maxWidth={1280}
                 mx="auto"
                 px="6"
             >
                 <Sidebar />
 
-                <SimpleGrid flex="1" gap="4" minChildWidth="320px" align="flex-start">
+                <SimpleGrid flex="1" gap="4" minChildWidth="450px" align="flex-start">
                     <Box
-                        p="8"
+                        p={["6", "8"]}
                         bg="gray.800"
                         borderRadius={8}
                         pb="4"
